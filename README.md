@@ -16,7 +16,7 @@ Neither currently writes to the other.
 |---|---|---|
 | identity | `.well-known/did.json` | the `did:web` document and its PDS/AppView endpoints |
 | declaration | `actor-manifest.jsonld` | 16 pipelines (12 xrpc, 2 cron, 2 subscribeRepos), 7 path-based sub-actors, capability whitelist |
-| boundary | `src/vessel/murakumo.cljc` | 27 cells, each gated on 7 attestations, each emitting an `:mst/put-record` plan |
+| boundary | `src/vessel/murakumo.kotoba` | 27 cells, each gated on 7 attestations, each emitting an `:mst/put-record` plan |
 | storage | `storage-profile.edn` | `:kotoba/local-agent-kagi-chunks-v1` — local DataScript query, append-only, kotobase head |
 | licence | `NOTICE` | Apache-2.0 + etzhayyim Charter Compliance Rider v3.1 |
 
