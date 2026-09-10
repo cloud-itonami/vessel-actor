@@ -14,7 +14,7 @@ Ten tracked files. Steps marked ✅ were run against `66ec625` on 2026-09-10.
 git ls-files
 #   .gitignore  .nojekyll  .well-known/did.json  NOTICE
 #   actor-manifest.jsonld  actor-manifest.test.ts  deps.edn
-#   src/vessel/murakumo.cljc  storage-profile.edn  test/vessel/murakumo_test.cljc
+#   src/vessel/murakumo.kotoba  storage-profile.edn  test/vessel/murakumo_test.kotoba
 ```
 
 No `package.json`, no Dockerfile, no wrangler config, no `.github/workflows`. The
