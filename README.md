@@ -39,7 +39,7 @@ That is the whole of the governance in this repository, and it is real.
 
 ## What runs, and what does not
 
-- ✅ `clojure -M:test` — 9 tests, 369 assertions, 0 failures.
+- ✅ `kbb -M:test` — 9 tests, 369 assertions, 0 failures.
 - ❌ `actor-manifest.test.ts` — there is no `package.json`, no vitest config and no
   `node_modules`. It has never run here, and three of its assertions are already
   stale. **From a file listing this reads like a tested manifest. It is not.**
