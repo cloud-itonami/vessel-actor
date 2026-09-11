@@ -24,7 +24,7 @@ neither is in this repository — they are what the platform is expected to prov
 ## 2. The Clojure suite runs and is green ✅
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
 
 ```
@@ -42,7 +42,7 @@ The one governed behaviour here. `common-gates` lists seven attestations and all
 cells require all seven:
 
 ```bash
-clojure -M -e '
+kbb -M -e '
 (require (quote [vessel.murakumo :as m]))
 (println "cells =" (count m/cell-specs) " gates/cell =" (count m/common-gates))
 (let [p (m/cell-plan :health {})]
@@ -128,7 +128,7 @@ passes report the same thing: silence. Do not read the presence of
 ```bash
 jq -r '.id' .well-known/did.json          # did:web:etzhayyim.com:actor:vessel
 jq -r '."@id"' actor-manifest.jsonld      # did:web:vessel.etzhayyim.com
-clojure -M -e '(require (quote [vessel.murakumo :as m])) (println m/actor-did)'
+kbb -M -e '(require (quote [vessel.murakumo :as m])) (println m/actor-did)'
 #                                         # did:web:vessel.etzhayyim.com
 ```
 
